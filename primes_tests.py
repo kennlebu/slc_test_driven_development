@@ -12,3 +12,5 @@ class PrimeGeneratorTest(unittest.TestCase):
     def test_zero(self):
         self.assertEqual(self.primes.prime_generator(0), "0 is not a prime number", msg="Zero is not a prime number")
 
+    def test_one(self):
+        self.assertEqual(self.primes.prime_generator(1), "1 is not a prime number", msg="One is not a prime number")
