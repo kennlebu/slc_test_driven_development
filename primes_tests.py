@@ -17,3 +17,6 @@ class PrimeGeneratorTest(unittest.TestCase):
         
     def test_non_integer(self):
         self.assertEqual(self.primes.prime_generator(a), "Enter an integer", msg="Input must be an integer")
+        
+    def test_non_negative(self):
+        self.assertEqual(self.primes.prime_generator(a), "Number should be a positive integer", msg="Input should be a positive integer")
